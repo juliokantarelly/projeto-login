@@ -98,6 +98,14 @@ div.campo > input {
     transform: translateY(-12px);
 }
 
+div.campo input {
+    outline: none;
+}
+
+div.campo input:focus-within {
+    background-color: white;
+}
+
 form > input[type=submit] {
     display: block;
     font-size: 1em;
