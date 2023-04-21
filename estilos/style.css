@@ -5,6 +5,7 @@
     Cinza escuro: #121B22
     Azul claro: #A3AFBB
     Canela: #94704E
+    Outro azul: #94a7bb
 */
 
 * {
@@ -30,17 +31,17 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: #EAEBED;
-    width: 260px;
-    height: 500px;
+    width: 250px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
 
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -48,7 +49,7 @@ section#login > div#imagem {
     background: #A3AFBB url(../imagens/pexels-mehmet-turgut-kirkgoz-14570742.jpg) no-repeat;
     background-size: cover;
     background-position: center bottom;
-    height: 250px;
+    height: 200px;
 }
 
 section#login > div#formulario {
@@ -62,5 +63,76 @@ div#formulario > h1 {
 }
 
 div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #94704E;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    border: 2px solid #94704E;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #94a7bb;
+    font-size: 1em;
+    width: calc(100% - 44.8px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #94a7bb;
+    color: white;
+    border: none;
+    border-radius: 5px;    
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #75889c;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #9db7d3;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #5a6c80;
+}
+
+form > a.botao:hover {
+    background-color: #9db7d3;
+}
+
+form > a.botao > span {
     font-size: 0.8em;
 }
